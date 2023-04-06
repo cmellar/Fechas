@@ -1,3 +1,6 @@
+/*Desafio que calcula la mayoria de edad entre 2 personas
+ * entregando como resultado de persona mayor o iguales en edad
+ */
 package cl.fechas;
 import java.util.Scanner;
 import java.util.InputMismatchException;
@@ -14,7 +17,7 @@ public class fechas {
 		String fecha2 = " "; // Se declara variable para segunda fecha
 		
 		
-		/*Se declaran variablec para cáculos*/
+		/*Se declaran variables para cálculos*/
 		int dia1=0;
 		int mes1=0;
 		int ano1=0;
@@ -37,7 +40,7 @@ public class fechas {
 			    mes1 = Integer.parseInt(fecha1.substring(3,5)); //almacenamos el mes de la primera persona
 			    ano1 = Integer.parseInt(fecha1.substring(6)); //almacenamos el año de la primera persona
 			    continua = false;
-			} catch (DateTimeParseException ex) { //Validamos excepciones del formato
+			} catch (DateTimeParseException ex) { // Validamos excepciones del formato
 				System.out.println("Debe ingresar obligatoriamente una fecha");
 				continua = true;
 			} catch (NumberFormatException ex) {
@@ -96,5 +99,4 @@ public class fechas {
 		tecla.close();
 		
 	}
-
 }
